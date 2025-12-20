@@ -12,7 +12,7 @@ font-family: "Segoe UI", Tahoma, sans-serif;
     padding: top 70px;
 
      min-height: 100vh;
-    background-image: url("picture/gallerybg.jpg");
+    background-image: url("gallerybg.jpg");
     background-size: cover;      
     background-position: right center;
     background-repeat: no-repeat;
@@ -493,4 +493,5 @@ section {
     min-width: 180px;
     text-align: center;
 }
+
 
