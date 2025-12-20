@@ -124,7 +124,6 @@ nav a:hover {
   align-items: center;
   text-align: center;
   overflow: visible;
-  font-style: italic;
 }
 
 .intro th {
@@ -179,5 +178,6 @@ nav a:hover {
   min-width: 180px;
   text-align: center;
 }
+
 
 
