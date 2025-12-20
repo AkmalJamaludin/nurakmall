@@ -1,0 +1,202 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="about me.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<nav>
+<h2 class="h2-1">MAL'S PERSONAL INFO</h2>
+
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="about me.html">About</a>
+<a href="education.html">Education</a>
+<a href="experience.html">Experience</a>
+<a href="gallery.html">Gallery</a>
+</div>
+<div id="nav-clock" class="clock-style"></div>
+    </div>
+
+</nav>
+
+<section id="title">KNOW ABOUT ME</section>
+
+<section id="personal-info">
+    <div class="info-card">
+
+     <h2 class="info-title">MY DETAILS</h2>
+        
+     <div class="info-body">
+     <div class="profile-sidebar">
+     <img src="picture/myself.jpg" alt="Profile Picture">
+     </div>
+
+    <div class="details-content">
+    <div class="detail-row">
+    <span class="label">NAME</span>
+    <span class="value">Muhammad Nur Akmal</span>
+    </div>
+
+    <div class="detail-row">
+    <span class="label">AGE</span>
+    <span class="value">20</span>
+    </div>
+    <div class="detail-row">
+    <span class="label">DATE OF BIRTH</span>
+    <span class="value">27<sup>th</sup> November 2005</span>
+    </div>
+
+    <div class="detail-row">
+    <span class="label">CURRENT EDUCATION</span>
+    <span class="value">Diploma in Science Information</span>
+    </div>
+
+    <div class="detail-row">
+    <span class="label">NATIONALITY</span>
+    <span class="value">Malaysian</span>
+    </div>
+
+    <div class="detail-row">
+    <span class="label">FROM</span>
+    <span class="value">Batu Pahat, Johor</span>
+        
+     </div>
+  </div>
+</div>
+
+    <tr>
+    <td colspan="2"><hr class="nav-divider"></td>
+    </tr>
+
+   <h2 class="personality-title">MY PERSONALITY</h2>
+   <div class="Mypersonality">
+    <a class="about-btn">Introvert</a>
+    <a class="about-btn">Independent</a>
+    <a class="about-btn">Calm</a>
+
+    </div>
+</section>
+
+<tr>
+    <td colspan="2"><hr class="nav-divider"></td>
+  </tr>
+
+<section id="hobbies">
+    <h2 class="hobbies-main-title">My Hobbies</h2>
+    
+    <div class="hobbies-container">
+    <div class="hobby-card">
+    <div class="hobby-image">
+    <img src="hobby/hobby2.jpg" alt="Handball">
+    </div>
+    <div class="hobby-info">
+    
+        <h3>Handball</h3>
+
+    <tr>
+    <td colspan="2"><hr class="nav-divider"></td>
+   </tr>
+        <p>UiTMJ Karisma Team🔥</p>
+        </div>
+        </div>
+
+        <div class="hobby-card">
+            <div class="hobby-image">
+            <img src="hobby/sleep.jpg" alt="Sleep">
+            </div>
+            <div class="hobby-info">
+            <h3>Sleep</h3>
+
+    <tr>
+    <td colspan="2"><hr class="nav-divider"></td>
+   </tr>
+
+        <p>Always sleepy💤</p>
+        </div>
+        </div>
+
+        <div class="hobby-card">
+            <div class="hobby-image">
+            <img src="hobby/hobby1.jpg" alt="Badminton">
+            </div>
+            <div class="hobby-info">
+                
+                <h3>Badminton</h3>
+    <tr>
+    <td colspan="2"><hr class="nav-divider"></td>
+   </tr>
+            <p>smash time!🏸</p>
+        </div>
+        </div>
+
+        </div>
+    </div>
+</section>
+
+<tr>
+    <td colspan="2"><hr class="nav-divider"></td>
+   </tr>
+    
+    <section class="music-section">
+    <h2 class="musicp">🎶 MY MUSIC</h2>
+    
+    <div class="nav-divider"></div>
+
+    <div class="music-grid">
+        
+        <div class="music-player">
+        <img src="song/nadin.jpg" alt="Nadin Album">
+        <div class="music-details">
+        <div class="song-title">Di Akhir Perang</div>
+        <div class="artist-name">Nadin Amizah</div>
+            <audio controls>
+                    <source src="song/nadin.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+     <div class="music-player">
+        <img src="song/yuna.jpg" alt="Yuna Album">
+         <div class="music-details">
+              <div class="song-title">Lautan</div>
+                <div class="artist-name">Yuna</div>
+                <audio controls>
+                  <source src="song/lautan.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<script>
+function updateClock() {
+    const now = new Date();
+    
+    // Formatting the date (e.g., Dec 19, 2025)
+    const dateOptions = { month: 'short', day: 'numeric', year: 'numeric' };
+    const dateStr = now.toLocaleDateString('en-US', dateOptions);
+    
+    // Formatting the time (e.g., 03:53:46 AM)
+    const timeStr = now.toLocaleTimeString('en-US', { 
+        hour12: true, 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        second: '2-digit' 
+    });
+
+    document.getElementById('nav-clock').innerHTML = `${dateStr} | ${timeStr}`;
+}
+
+// Run the clock immediately, then update every 1 second
+setInterval(updateClock, 1000);
+updateClock();
+
+</script>
+
+    </body>
+</html>

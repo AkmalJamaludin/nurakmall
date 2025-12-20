@@ -1,0 +1,80 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cover.css">\
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+  <h2 class="h2-1">MAL'S PERSONAL INFO</h2>
+<div id="nav-clock" class="clock-style"></div>
+</nav>
+
+<!--Intro Section-->
+
+<section id="profile">
+    <div class="photo-container">
+
+        <div class="me-item"><img src="picture/cover.jpg" alt="Profile Photo"></div>
+
+    </div>
+</section>
+
+<section id="table">
+<table class="intro">
+
+  <tr>
+    <th colspan="2">NUR AKMAL</th>
+  </tr>
+
+  <tr>
+    <td colspan="2"><hr class="nav-divider"></td>
+  </tr>
+
+  <tr>
+    <td colspan="2">
+      Hi I'm Final year of Science Information Student!<br><br>
+
+      <a href="https://www.instagram.com/n.akmll_/" target="_blank"><img src="Socmed/insta.png" width="70" height="70"></a>
+      <a href="https://www.tiktok.com/@n.akmll_?_r=1&_t=ZS-926NroG4UTf" target="_blank"><img src="Socmed/tiktok.png" width="70" height="70"></a><br><br>
+      
+      <div class="Myprofile">
+      <a href="about me.html" class="about-btn">Know About Me</a>
+      </div>
+      </td>
+  </tr>
+
+</table>
+</section>
+
+<script>
+function updateClock() {
+    const now = new Date();
+    
+    // Formatting the date (e.g., Dec 19, 2025)
+    const dateOptions = { month: 'short', day: 'numeric', year: 'numeric' };
+    const dateStr = now.toLocaleDateString('en-US', dateOptions);
+    
+    // Formatting the time (e.g., 03:53:46 AM)
+    const timeStr = now.toLocaleTimeString('en-US', { 
+        hour12: true, 
+        hour: '2-digit', 
+        minute: '2-digit', 
+        second: '2-digit' 
+    });
+
+    document.getElementById('nav-clock').innerHTML = `${dateStr} | ${timeStr}`;
+}
+
+// Run the clock immediately, then update every 1 second
+setInterval(updateClock, 1000);
+updateClock();
+
+</script>
+</body>
+
